@@ -42,6 +42,7 @@ LABWCAST_FILE="$HOMEDIR/.config/labwc/autostart"
 
 is_pi () {
   ARCH=$(dpkg --print-architecture)
+  echo "ARCH :"$ARCH
   if [ "$ARCH" = "armhf" ] || [ "$ARCH" = "arm64" ] ; then
     return 0
   else
